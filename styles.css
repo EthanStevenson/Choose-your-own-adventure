@@ -1,11 +1,21 @@
-body{
-	background-color: #000000;
+.pre {
+    align-items: center;
+    text-align: center;
 }
 
-.start-button{
+.first {
+	visibility: hidden;
+}
+
+body {
+    background-color: #000000;
+
+}
+
+.start-button {
     padding: 20px;
     border-radius: 100px;
-    color:white;
-    background-color: black;
-    border: 1.5px solid white;
+    color: white;
+    background-color: #000000;
+    border: 1.5px solid #ffffff;
 }
