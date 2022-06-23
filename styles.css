@@ -1,0 +1,11 @@
+body{
+	background-color: #000000;
+}
+
+.start-button{
+    padding: 20px;
+    border-radius: 100px;
+    color:white;
+    background-color: black;
+    border: 1.5px solid white;
+}
