@@ -3,10 +3,6 @@
     text-align: center;
 }
 
-.first {
-	visibility: hidden;
-}
-
 body {
     background-color: #000000;
 
@@ -18,4 +14,25 @@ body {
     color: white;
     background-color: #000000;
     border: 1.5px solid #ffffff;
+}
+
+.steve {
+    display: none;
+    height: 200px;
+    padding-right: 5%;
+}
+
+.village {
+    height: 200px;
+    display: none;
+}
+
+.cave {
+    height: 200px;
+    display: none;
+}
+
+.choice1 {
+    display: flex;
+    justify-content: space-around;
 }
