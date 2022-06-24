@@ -4046,10 +4046,6 @@
     text-align: center;
 }
 
-.first {
-	visibility: hidden;
-}
-
 body {
     background-color: #000000;
 
@@ -4061,18 +4057,46 @@ body {
     color: white;
     background-color: #000000;
     border: 1.5px solid #ffffff;
+}
+
+.steve {
+    display: none;
+    height: 200px;
+    padding-right: 5%;
+}
+
+.village {
+    height: 200px;
+    display: none;
+}
+
+.cave {
+    height: 200px;
+    display: none;
+}
+
+.choice1 {
+    display: flex;
+    justify-content: space-around;
 }</style></head>
     <body>
         <div class="pre">
             <button class="start-button">--Click to Begin--</button>
         </div>
-        <div class="first">
-            <img src="https://cdn.vox-cdn.com/thumbor/py9ZYcQWFRD3Nfx_a-bCykzMZ3Y=/0x0:1920x1080/1200x800/filters:focal(293x502:599x808)/cdn.vox-cdn.com/uploads/chorus_image/image/70403442/19BR_TiltedTowers.0.jpg" class="tilted">
+        <div>
+            <p class="first">Steve made a new world! He looks around and sees a village and a cave. Which should he go to first?</p>
+            <div class="choice1">
+                <img src="https://www.minecraft.net/content/dam/games/minecraft/screenshots/mayor2.jpg" class="first village">
+                <img src="https://pngroyale.com/wp-content/uploads/2022/02/Lego-Minecraft-Steve-PNG-Image-Transparent-Background.png" class="first steve">
+                <img src="https://minecraftseedhq.com/wp-content/uploads/2019/06/deep-cave-entrance-1024x640.jpeg" class="first cave">
+
+            </div>
         </div>
     
 <script>
 /*__POPCODESTART__*/
 $(".start-button").click(function () {
   $(".start-button").hide();
+  $(".first").show();
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImhpZGUiXSwibWFwcGluZ3MiOiJBQUFBQSxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CQyxLQUFuQixDQUF5QixZQUFXO0FBQ2hDRCxFQUFBQSxDQUFDLENBQUMsZUFBRCxDQUFELENBQW1CRSxJQUFuQjtBQUNILENBRkQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLnN0YXJ0LWJ1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnN0YXJ0LWJ1dHRvblwiKS5oaWRlKCk7XG59KTtcbiJdfQ==</script></body></html>
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImhpZGUiLCJzaG93Il0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkMsS0FBbkIsQ0FBeUIsWUFBVztBQUNoQ0QsRUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkUsSUFBbkI7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFFBQUQsQ0FBRCxDQUFZRyxJQUFaO0FBQ0gsQ0FIRCIsInNvdXJjZXNDb250ZW50IjpbIiQoXCIuc3RhcnQtYnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuc3RhcnQtYnV0dG9uXCIpLmhpZGUoKTtcbiAgICAkKFwiLmZpcnN0XCIpLnNob3coKTtcbn0pOyJdfQ==</script></body></html>
