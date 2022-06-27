@@ -13,6 +13,7 @@ body {
     border-radius: 100px;
     color: white;
     background-color: #000000;
+    background-image: none;
     border: 1.5px solid #ffffff;
     margin-top: 250px;
 }
@@ -30,7 +31,7 @@ body {
 
 .choice1img,
 .choice2img,
-.choice3img{
+.choice3img {
     display: flex;
     justify-content: space-around;
     margin-top: 180px;
@@ -38,14 +39,15 @@ body {
 }
 
 
-.first {
+.first,
+.ending1 {
     display: none;
     text-align: center;
     margin-top: 20px;
 }
 
 .options1,
-.options2{
+.options2 {
     display: flex;
     justify-content: space-around;
 
@@ -60,17 +62,39 @@ body {
 .house,
 .ending1,
 .villages,
-.caves{
+.caves,
+.sad,
+.ending2,
+.options3,
+.ending3,
+.pickaxe,
+.ending4,
+.diamonds{
     display: none;
 }
 
 
 .second1,
-.second2{
+.second2,
+.ending2,
+.ending3,
+.ending4{
     text-align: center;
     margin-top: 20px;
 }
 
-.death{
-	height: 450px;
+.death,
+.pickaxe,
+.diamonds{
+    height: 450px;
+}
+
+button {
+    background-image: url("https://preview.redd.it/ww1im6l870t71.png?width=800&format=png&auto=webp&s=48d0a7da2d73d483023824c37f777bec65fcbf39");
+}
+
+.options3 {
+    display: flex;
+    justify-content: space-around;
+
 }
