@@ -12,4 +12,5 @@ $(".village").click(function() {
 
 $(".cave").click(function() {
     $(".page1").hide();
+    $(".page3").show();
 });
