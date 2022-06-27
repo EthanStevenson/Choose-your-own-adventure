@@ -8,3 +8,7 @@ $(".start-button").click(function() {
 $(".village").click(function() {
     $(".page1").hide();
     });
+
+$(".cave").click(function() {
+    $(".page1").hide();
+    });
