@@ -21,13 +21,16 @@ body {
 .village,
 .cave,
 .golem,
-.chest {
+.chest,
+.deeper,
+.mine{
     height: 200px;
 }
 
 
 .choice1img,
-.choice2img{
+.choice2img,
+.choice3img{
     display: flex;
     justify-content: space-around;
     margin-top: 180px;
@@ -50,12 +53,14 @@ body {
 .first,
 .page2,
 .village,
-.cave{
+.cave,
+.page3{
     display: none;
 }
 
 
-.second1 {
+.second1,
+.second2{
     text-align: center;
     margin-top: 20px;
 }
