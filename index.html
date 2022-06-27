@@ -4064,13 +4064,16 @@ body {
 .village,
 .cave,
 .golem,
-.chest {
+.chest,
+.deeper,
+.mine{
     height: 200px;
 }
 
 
 .choice1img,
-.choice2img{
+.choice2img,
+.choice3img{
     display: flex;
     justify-content: space-around;
     margin-top: 180px;
@@ -4093,15 +4096,18 @@ body {
 .first,
 .page2,
 .village,
-.cave{
+.cave,
+.page3{
     display: none;
 }
 
 
-.second1 {
+.second1,
+.second2{
     text-align: center;
     margin-top: 20px;
-}</style></head>
+}
+</style></head>
     <body>
 
 
@@ -4133,6 +4139,16 @@ body {
                 <img src="https://h9y3q5u4.stackpathcdn.com/files/products/large/large_medieval-blacksmith-2-2942.png" class="second1 chest">
             </div>
         </div>
+        
+        <div class="page3">
+            <h2 class="second2"><strong>Steve came to a fork in the cave system. To the left is a path that goes deeper and to the right is an abandoned mineshaft. Which way should he go?</strong></h2>
+            <div class="choice3img">
+                <img src="https://henrilechatnoir.com/wp-content/uploads/2020/03/best-minecraft-cave-mods.png" class="second2 deeper">
+                <img src="https://lh3.googleusercontent.com/NgYj3DoxTihNJ2lvIBO_0zXkj3eocVvxKrerC9WLqfeWPqbw4SH4PAF509cKvSI1weZ3ug-412GGUM3C_i5x_Q=s400" class="second2 steve">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-9f2afc32363a6917b27451bac24ac9da-lq" class="second2 mine">
+            </div>
+        </div>
+        
     
 <script>
 /*__POPCODESTART__*/
@@ -4147,5 +4163,6 @@ $(".village").click(function () {
 });
 $(".cave").click(function () {
   $(".page1").hide();
+  $(".page3").show();
 });
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImhpZGUiLCJzaG93IiwiY3NzIl0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkMsS0FBbkIsQ0FBeUIsWUFBVztBQUNoQ0QsRUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkUsSUFBbkI7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLGtDQUFELENBQUQsQ0FBc0NHLElBQXRDO0FBRUFILEVBQUFBLENBQUMsQ0FBQyxNQUFELENBQUQsQ0FBVUksR0FBVixDQUFjLGtCQUFkLEVBQWtDLDJqQkFBbEM7QUFDSCxDQUxEO0FBT0FKLENBQUMsQ0FBQyxVQUFELENBQUQsQ0FBY0MsS0FBZCxDQUFvQixZQUFXO0FBQzNCRCxFQUFBQSxDQUFDLENBQUMsUUFBRCxDQUFELENBQVlFLElBQVo7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFFBQUQsQ0FBRCxDQUFZRyxJQUFaO0FBQ0gsQ0FIRDtBQUtBSCxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdDLEtBQVgsQ0FBaUIsWUFBVztBQUN4QkQsRUFBQUEsQ0FBQyxDQUFDLFFBQUQsQ0FBRCxDQUFZRSxJQUFaO0FBQ0gsQ0FGRCIsInNvdXJjZXNDb250ZW50IjpbIiQoXCIuc3RhcnQtYnV0dG9uXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIuc3RhcnQtYnV0dG9uXCIpLmhpZGUoKTtcbiAgICAkKFwiLmZpcnN0LGNob2ljZTFpbWcsLnZpbGxhZ2UsLmNhdmVcIikuc2hvdygpO1xuICAgIFxuICAgICQoXCJib2R5XCIpLmNzcyhcImJhY2tncm91bmQtaW1hZ2VcIiwgXCJ1cmwoJ2h0dHBzOi8vaW1hZ2VzLXdpeG1wLWVkMzBhODZiOGM0Y2E4ODc3NzM1OTRjMi53aXhtcC5jb20vZi8wMGYzYWQ2My05ODJjLTRlNGMtYWExYy02ZGIzZTk4MmNmM2UvZGV4amp1eS0wNGNlYzAyZS0wNDBiLTQ1NDktOWQ3OS05YzMzNTY5ZDU0YmIucG5nP3Rva2VuPWV5SjBlWEFpT2lKS1YxUWlMQ0poYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSjFjbTQ2WVhCd09qZGxNR1F4T0RnNU9ESXlOalF6TnpOaE5XWXdaRFF4TldWaE1HUXlObVV3SWl3aWFYTnpJam9pZFhKdU9tRndjRG8zWlRCa01UZzRPVGd5TWpZME16Y3pZVFZtTUdRME1UVmxZVEJrTWpabE1DSXNJbTlpYWlJNlcxdDdJbkJoZEdnaU9pSmNMMlpjTHpBd1pqTmhaRFl6TFRrNE1tTXROR1UwWXkxaFlURmpMVFprWWpObE9UZ3lZMll6WlZ3dlpHVjRhbXAxZVMwd05HTmxZekF5WlMwd05EQmlMVFExTkRrdE9XUTNPUzA1WXpNek5UWTVaRFUwWW1JdWNHNW5JbjFkWFN3aVlYVmtJanBiSW5WeWJqcHpaWEoyYVdObE9tWnBiR1V1Wkc5M2JteHZZV1FpWFgwLkU4aHBoTUdqUldvT1Y5VEl4U1pURmR6aGZBRnc0Z0lXTEttZmVzdW5TOWcnKVwiKTtcbn0pO1xuXG4kKFwiLnZpbGxhZ2VcIikuY2xpY2soZnVuY3Rpb24oKSB7XG4gICAgJChcIi5wYWdlMVwiKS5oaWRlKCk7XG4gICAgJChcIi5wYWdlMlwiKS5zaG93KCk7XG59KTtcblxuJChcIi5jYXZlXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIucGFnZTFcIikuaGlkZSgpO1xufSk7Il19</script></body></html>
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbIiQiLCJjbGljayIsImhpZGUiLCJzaG93IiwiY3NzIl0sIm1hcHBpbmdzIjoiQUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkMsS0FBbkIsQ0FBeUIsWUFBVztBQUNoQ0QsRUFBQUEsQ0FBQyxDQUFDLGVBQUQsQ0FBRCxDQUFtQkUsSUFBbkI7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLGtDQUFELENBQUQsQ0FBc0NHLElBQXRDO0FBRUFILEVBQUFBLENBQUMsQ0FBQyxNQUFELENBQUQsQ0FBVUksR0FBVixDQUFjLGtCQUFkLEVBQWtDLDJqQkFBbEM7QUFDSCxDQUxEO0FBT0FKLENBQUMsQ0FBQyxVQUFELENBQUQsQ0FBY0MsS0FBZCxDQUFvQixZQUFXO0FBQzNCRCxFQUFBQSxDQUFDLENBQUMsUUFBRCxDQUFELENBQVlFLElBQVo7QUFDQUYsRUFBQUEsQ0FBQyxDQUFDLFFBQUQsQ0FBRCxDQUFZRyxJQUFaO0FBQ0gsQ0FIRDtBQUtBSCxDQUFDLENBQUMsT0FBRCxDQUFELENBQVdDLEtBQVgsQ0FBaUIsWUFBVztBQUN4QkQsRUFBQUEsQ0FBQyxDQUFDLFFBQUQsQ0FBRCxDQUFZRSxJQUFaO0FBQ0FGLEVBQUFBLENBQUMsQ0FBQyxRQUFELENBQUQsQ0FBWUcsSUFBWjtBQUNILENBSEQiLCJzb3VyY2VzQ29udGVudCI6WyIkKFwiLnN0YXJ0LWJ1dHRvblwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnN0YXJ0LWJ1dHRvblwiKS5oaWRlKCk7XG4gICAgJChcIi5maXJzdCxjaG9pY2UxaW1nLC52aWxsYWdlLC5jYXZlXCIpLnNob3coKTtcbiAgICBcbiAgICAkKFwiYm9keVwiKS5jc3MoXCJiYWNrZ3JvdW5kLWltYWdlXCIsIFwidXJsKCdodHRwczovL2ltYWdlcy13aXhtcC1lZDMwYTg2YjhjNGNhODg3NzczNTk0YzIud2l4bXAuY29tL2YvMDBmM2FkNjMtOTgyYy00ZTRjLWFhMWMtNmRiM2U5ODJjZjNlL2RleGpqdXktMDRjZWMwMmUtMDQwYi00NTQ5LTlkNzktOWMzMzU2OWQ1NGJiLnBuZz90b2tlbj1leUowZVhBaU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuZXlKemRXSWlPaUoxY200NllYQndPamRsTUdReE9EZzVPREl5TmpRek56TmhOV1l3WkRReE5XVmhNR1F5Tm1Vd0lpd2lhWE56SWpvaWRYSnVPbUZ3Y0RvM1pUQmtNVGc0T1RneU1qWTBNemN6WVRWbU1HUTBNVFZsWVRCa01qWmxNQ0lzSW05aWFpSTZXMXQ3SW5CaGRHZ2lPaUpjTDJaY0x6QXdaak5oWkRZekxUazRNbU10TkdVMFl5MWhZVEZqTFRaa1lqTmxPVGd5WTJZelpWd3ZaR1Y0YW1wMWVTMHdOR05sWXpBeVpTMHdOREJpTFRRMU5Ea3RPV1EzT1MwNVl6TXpOVFk1WkRVMFltSXVjRzVuSW4xZFhTd2lZWFZrSWpwYkluVnlianB6WlhKMmFXTmxPbVpwYkdVdVpHOTNibXh2WVdRaVhYMC5FOGhwaE1HalJXb09WOVRJeFNaVEZkemhmQUZ3NGdJV0xLbWZlc3VuUzlnJylcIik7XG59KTtcblxuJChcIi52aWxsYWdlXCIpLmNsaWNrKGZ1bmN0aW9uKCkge1xuICAgICQoXCIucGFnZTFcIikuaGlkZSgpO1xuICAgICQoXCIucGFnZTJcIikuc2hvdygpO1xufSk7XG5cbiQoXCIuY2F2ZVwiKS5jbGljayhmdW5jdGlvbigpIHtcbiAgICAkKFwiLnBhZ2UxXCIpLmhpZGUoKTtcbiAgICAkKFwiLnBhZ2UzXCIpLnNob3coKTtcbn0pOyJdfQ==</script></body></html>
